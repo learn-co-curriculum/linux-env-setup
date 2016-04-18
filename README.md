@@ -156,4 +156,4 @@ sudo dpkg -i slack-desktop-*.deb
 
 This app stores your clipboard history and makes it really easy to paste anything from your history. Take a look at the settings and you can customize your keybindings for it.
 
-First, download (Parecellite)[https://apps.ubuntu.com/cat/applications/precise/parcellite/] and then install xdotool with `sudo apt-get install xdotool`.
+First, download [Parecellite](https://apps.ubuntu.com/cat/applications/precise/parcellite/) and then install xdotool with `sudo apt-get install xdotool`.
