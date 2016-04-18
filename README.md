@@ -21,17 +21,19 @@ Before we start installing all of our developer tools, we want to make sure that
 
 ## Installing Dev tools
 
+### The essentials
+
 Now we can install some essential dev tools (postgres, node...) using curl:
 
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs nodejs`
  - `curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
 
-You can also install a few non-essential tools (ack-grep, vim, and libgnome) if you like:
+### The non-essentials:
 
  - `sudo apt-get -y install ack-grep vim libgnome2-bin`
 
-#### The non-essential tools:
+You can also install a few non-essential tools (ack-grep, vim, and libgnome) if you like:
 
  - [ack-grep](http://beyondgrep.com/) - A more advanced tool to take the place of the `grep` (search) command in the terminal
  - [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) - A terminal based text editor
