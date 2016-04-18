@@ -4,7 +4,7 @@
 
 In this readme we are going to go over the steps for setting up your development environment in Ubuntu. First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
-## Set up group <talk to logan>
+## Set up group (talk to logan)
 
   We need to blah blah blah.....
 
@@ -50,7 +50,7 @@ If you're curious, you can read more about `chmod` (setting permissions) and `ch
 
 ## Set up .netrc file for the learn gem
 
-The learn gem needs this netrc file to work. <logan>?
+The learn gem needs this netrc file to work. Logan?
 
  - `touch ~/.netrc && chmod 0600 ~/.netrc`
  - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
@@ -106,8 +106,8 @@ Now that you have most of your tools installed, you're going to want to configur
 
 These dotfiles do a variety of different things and I highly recomend you download them.
 
- - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/irbrc" -o "$HOME/.irbrc"` - <Logan>
- - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/ubuntu-gitignore" -o "$HOME/.gitignore"` - <Logan>
+ - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/irbrc" -o "$HOME/.irbrc"` - Logan?
+ - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/ubuntu-gitignore" -o "$HOME/.gitignore"` - Logan?
  - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/linux_bash_profile" -o "$HOME/.bash_profile"` - Your bash profile loads up every time you open a terminal window. The Learn bash_profile is designed to load up a bunch of shortcuts for you as well as make sure that RVM loads up every time you open the terminal. I recommend you take a look at this file and even see if there are any shortcuts of your own that you'd like to add! Note: this will overwrite existing bash profile, so back up if you want to.
  - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/linux_gitconfig" -o "$HOME/.gitconfig"` then `nano $HOME/.gitconfig` and edit what needs to be edited (github username and github email in a few places)
 
