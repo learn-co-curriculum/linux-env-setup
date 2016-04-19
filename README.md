@@ -2,11 +2,13 @@
 
 ## Setting up your Ubuntu Developer Environment
 
-In this readme we are going to go over the steps for setting up your development environment in Ubuntu. First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
+In this readme we are going to go over the steps for setting up your development environment in Ubuntu. Specifically, we wrote these instructions with Ubuntu 15.10 in mind using the MATE Desktop Environment 1.10.2.
 
-## Set up group (talk to logan)
+First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
-  We need to blah blah blah.....
+## Set up group
+
+He we are setting up a group with the name "npm". This is so that we can set reasonable permissions on packages that get installed via npm (more on permissions and npm later). These permissions ensure that we can globally install npm packages.
 
  - `sudo groupadd npm`
  - `sudo usermod -a -G npm,staff $USER`
@@ -37,7 +39,7 @@ You can also install a few non-essential tools (ack-grep, vim, and libgnome) if 
 
  - [ack-grep](http://beyondgrep.com/) - A more advanced tool to take the place of the `grep` (search) command in the terminal
  - [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) - A terminal based text editor
- - [libgnome2-bin](https://developer.gnome.org/about/about.html.en) - Provides documentation for the GNOME desktop environment
+ - [libgnome2-bin](https://developer.gnome.org/about/about.html.en) - Provides documentation for the GNOME desktop environment and acts as a handy open tool.
 
 ## Setting file permissions
 
@@ -49,18 +51,19 @@ To be able to properly use some of these tools, we need to manually set some of 
  - `sudo chmod 0755 /usr/lib/node_modules`
 
 If you're curious, you can read more about `chmod` (setting permissions) and `chown` (setting the owner) here: http://www.unixtutorial.org/2014/07/difference-between-chmod-and-chown/
+Take a look at [this page](http://www.perlfect.com/articles/chmod.shtml) if you want to understand the permission values (0755, 0600, ...)
 
 ## Set up .netrc file for the learn gem
 
-The learn gem needs this netrc file to work. Logan?
+The learn gem needs this netrc file to work. The `.netrc` file is a standard location to store login/token info, so it is we store information needed for Learn.
 
  - `touch ~/.netrc && chmod 0600 ~/.netrc`
- - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
 
 ## Installing RVM
 
 [RVM](https://en.wikipedia.org/wiki/Ruby_Version_Manager) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.1.0 and another needs 2.3.0, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
 
+ - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
  - `\curl -sSL https://get.rvm.io | bash`
  - `rvm install 2.3.0`
  - `rvm use 2.3.0 --default`
@@ -108,8 +111,8 @@ Now that you have most of your tools installed, you're going to want to configur
 
 These dotfiles do a variety of different things and I highly recomend you download them.
 
- - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/irbrc" -o "$HOME/.irbrc"` - Logan?
- - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/ubuntu-gitignore" -o "$HOME/.gitignore"` - Logan?
+ - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/irbrc" -o "$HOME/.irbrc"` - This file gives you some nice formatting for when you're in IRB (IRB lets you write ruby code in your terminal)
+ - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/ubuntu-gitignore" -o "$HOME/.gitignore"` - Global .gitignore rules. When you add a .gitignore file to a project, it let's you specify certain files that you DO NOT want pushed up to github (like API keys...)
  - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/linux_bash_profile" -o "$HOME/.bash_profile"` - Your bash profile loads up every time you open a terminal window. The Learn bash_profile is designed to load up a bunch of shortcuts for you as well as make sure that RVM loads up every time you open the terminal. I recommend you take a look at this file and even see if there are any shortcuts of your own that you'd like to add! Note: this will overwrite existing bash profile, so back up if you want to.
  - `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/linux_gitconfig" -o "$HOME/.gitconfig"` then `nano $HOME/.gitconfig` and edit what needs to be edited (github username and github email in a few places)
 
@@ -157,3 +160,5 @@ sudo dpkg -i slack-desktop-*.deb
 This app stores your clipboard history and makes it really easy to paste anything from your history. Take a look at the settings and you can customize your keybindings for it.
 
 First, download [Parecellite](https://apps.ubuntu.com/cat/applications/precise/parcellite/) and then install xdotool with `sudo apt-get install xdotool`.
+
+>Note: To set up one click paste from history, open up the Parecellite preferences. In the Behavior tab, select Auto Paste and Key and unselect Mouse. Then in the Hot Keys tab, just make sure you have something set for History Key Combination. Now when you hit those keys, you get your last X (X is number of items in history) copied items for easy pasting!
