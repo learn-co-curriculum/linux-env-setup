@@ -107,6 +107,15 @@ Now that you have most of your tools installed, you're going to want to configur
 
  - `learn whoami` and enter oauth token when asked (from https://learn.co/<github_username>)
 
+You can find your oauth token at the bottom of your profile page.
+
+Once you submit your oauth token, the command should return with your Name, Username, Email, and your Learn Directory.  Take note of where your Learn Directory is located.  You will find a `~/.learn-config` file that also has the location of the Learn Directory.
+
+## Opening the Learn-Co labs in a Natvie IDE environment.
+
+Currently, there is no Learn-Co IDE available for Linux, so you will work in a native environment.  When you have a lab available to work on, you can find CLI instructions for workin with the lab system in this document: https://github.com/learn-co-curriculum/opening-a-lab-osx.  Even though the document is for OSX, the commands are the same.  It will show you how to use native `git` commands and how to use the `learn` command you installed in a previous step.
+
+
 ## Optional Dotfiles
 
 These dotfiles do a variety of different things and I highly recomend you download them.
