@@ -6,6 +6,8 @@ In this readme we are going to go over the steps for setting up your development
 
 First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
+We also want to make sure that your terminal is set to be a login shell. Setting your terminal to a login shell ensures that our .bash_profile will be run. In Ubuntu, open up your terminal, select Edit > Profile Preferences. Then on the Command tab, check off 'Run command as login shell'.
+
 ## Set up group
 
 He we are setting up a group with the name "npm". This is so that we can set reasonable permissions on packages that get installed via npm (more on permissions and npm later). These permissions ensure that we can globally install npm packages.
