@@ -6,6 +6,8 @@ In this readme we are going to go over the steps for setting up your development
 
 First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
+We also want to make sure that your terminal is set to be a login shell. Setting your terminal to a login shell ensures that our .bash_profile will be run. In Ubuntu, open up your terminal, select Edit > Profile Preferences. Then on the Command tab, check off 'Run command as login shell'.
+
 ## Set up group
 
 He we are setting up a group with the name "npm". This is so that we can set reasonable permissions on packages that get installed via npm (more on permissions and npm later). These permissions ensure that we can globally install npm packages.
@@ -48,7 +50,7 @@ To be able to properly use some of these tools, we need to manually set some of 
  - `sudo chown root:staff /usr/bin`
  - `sudo chmod 0775 /usr/bin`
  - `sudo chown -R root:npm /usr/lib/node_modules`
- - `sudo chmod 0755 /usr/lib/node_modules`
+ - `sudo chmod 0775 /usr/lib/node_modules`
 
 If you're curious, you can read more about `chmod` (setting permissions) and `chown` (setting the owner) here: http://www.unixtutorial.org/2014/07/difference-between-chmod-and-chown/
 Take a look at [this page](http://www.perlfect.com/articles/chmod.shtml) if you want to understand the permission values (0755, 0600, ...)
@@ -88,9 +90,10 @@ To set up your gems and install some necessary ones, run the following commands:
 
 ## Installing a Node Pacakge
 
-One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript. Here we're just going to do a global install for an npm testing package Protractor with the following command:
+One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript. We're also going to do a global install for an npm testing package Protractor with the following command:
 
- - `npm install -g protractor`
+ - `sudo npm install -g n`
+ - `sudo npm install -g protractor`
 
 ## Setting up your computer up with Github
 
