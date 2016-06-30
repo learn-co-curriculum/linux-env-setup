@@ -32,6 +32,7 @@ Now we can install some essential dev tools (postgres, node...) using curl:
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs`
  - `curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
+ - `sudo dpkg --add-architecture i386` This will install an architecture needed to install Team Viewer later.
 
 ### The non-essentials:
 
@@ -125,6 +126,10 @@ These dotfiles do a variety of different things and I highly recomend you downlo
 ### Chrome - Essential
 
 The Google Chrome browser is the required browser for Learn. You can download and install it by going to www.google.com/chrome.
+
+### Team Viewer
+
+You're going to want to download and install Team Viewer for Ubuntu [here](https://www.teamviewer.com/en/download/linux/). This is the tool we use at learn to screen share!
 
 ### Atom - Essential (or at least _some_ code editor)
 
