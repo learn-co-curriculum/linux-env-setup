@@ -88,6 +88,7 @@ To set up your gems and install some necessary ones, run the following commands:
  - `gem install sqlite3`
  - `gem install bundler`
  - `gem install rails`
+ - `gem install nokogiri`
 
 ## Installing a Node Pacakge
 
