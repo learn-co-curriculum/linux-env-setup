@@ -130,7 +130,7 @@ The Google Chrome browser is the required browser for Learn. You can download an
 
 ### Zoom Client
 
-You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share!
+You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share! Download the .deb file, then right click and open with the GDebi Package Installer. 
 
 ### Atom - Essential (or at least _some_ code editor)
 
