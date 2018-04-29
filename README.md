@@ -2,7 +2,7 @@
 
 ## Setting up your Ubuntu Developer Environment
 
-In this readme we are going to go over the steps for setting up your development environment in Ubuntu. Specifically, we wrote these instructions with Ubuntu 15.10 in mind using the MATE Desktop Environment 1.10.2.
+In this readme we are going to go over the steps for setting up your development environment in Ubuntu. Specifically, we wrote these instructions with Ubuntu 18.04 in mind using the MATE Desktop Environment 1.20.1.
 
 First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
