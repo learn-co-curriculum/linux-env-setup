@@ -128,9 +128,9 @@ These dotfiles do a variety of different things and I highly recomend you downlo
 
 The Google Chrome browser is the required browser for Learn. You can download and install it by going to www.google.com/chrome.
 
-### Team Viewer
+### Zoom Client
 
-You're going to want to download and install Team Viewer for Ubuntu [here](https://www.teamviewer.com/en/download/linux/). This is the tool we use at learn to screen share!
+You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share!
 
 ### Atom - Essential (or at least _some_ code editor)
 
