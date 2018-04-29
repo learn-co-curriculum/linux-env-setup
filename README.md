@@ -69,8 +69,8 @@ The learn gem needs this netrc file to work. The `.netrc` file is a standard loc
  - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
  - `\curl -sSL https://get.rvm.io | bash`
  - `echo "[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*"`
- - `rvm install 2.3.1`
- - `rvm use 2.3.1 --default`
+ - `rvm install 2.3.7`
+ - `rvm use 2.3.7 --default`
 
 You can easily install different Ruby verions with `rvm instal <version number>`, switch between versions with `rvm use <version number>` and check to see which you've already installed with `rvm list`. You can always check what version your current terminal window is with `ruby -v`.
 
