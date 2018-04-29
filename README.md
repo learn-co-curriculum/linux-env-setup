@@ -148,18 +148,6 @@ If you're not already familiar with Slack, it is a messaging app that is widely 
 
 `sudo apt-get install slack-desktop `
 
-For more information on ScudCloud, you can check out their github: https://github.com/raelgc/scudcloud
-
-### Slack Beta
-
-You can try the official beta client, but keep in mind that it is still in the works. There are binary packages for Ubuntu and Fedora that can be found here: https://slack.com/downloads
-
-Download the 64-bit version for Ubuntu, `cd ~/Downloads` and run:
-
-```
-sudo dpkg -i slack-desktop-*.deb
-```
-
 ### Parcellite
 
 This app stores your clipboard history and makes it really easy to paste anything from your history. Take a look at the settings and you can customize your keybindings for it.
