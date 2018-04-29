@@ -130,7 +130,7 @@ The Google Chrome browser is the required browser for Learn. You can download an
 
 ### Zoom Client
 
-You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share! Download the .deb file, then right click and open with the GDebi Package Installer. 
+You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share! Download the .deb file, then right click and open with the GDebi Package Installer.
 
 ### Atom - Essential (or at least _some_ code editor)
 
@@ -142,16 +142,11 @@ This is just a quick launcher. It has a blue S logo at the top of your screen. R
 
 `sudo apt-get install synapse `
 
-### ScudCloud - Slack for Linux
+###Slack for Linux
 
 If you're not already familiar with Slack, it is a messaging app that is widely used in many tech companies and it is heavily used by the Learn community for students to chat and stay in touch with each other. If you're going through Learn, you should be on Slack.
 
-```
-sudo apt-add-repository -y ppa:rael-gc/scudcloud
-echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sudo apt-get update
-sudo apt-get install scudcloud
-```
+`sudo apt-get install slack-desktop `
 
 For more information on ScudCloud, you can check out their github: https://github.com/raelgc/scudcloud
 
