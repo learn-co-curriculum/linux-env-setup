@@ -32,7 +32,6 @@ Now we can install some essential dev tools (postgres, node...) using curl:
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs`
  - `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
- - `sudo dpkg --add-architecture i386` This will install an architecture needed to install Team Viewer later.
 
 ### The non-essentials:
 
