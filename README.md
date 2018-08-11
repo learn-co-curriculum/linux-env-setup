@@ -135,22 +135,8 @@ You're going to want to download and install Zoom for Ubuntu [here](https://zoom
 
 Atom is github's hackable code editor. It's got tons of great tools for writting code. You can get it by following [these instructions](https://github.com/atom/atom#debian-linux-ubuntu)
 
-### Synapse
-
-This is just a quick launcher. It has a blue S logo at the top of your screen. Right click, select preferences and you can set up a shortcut for the Activate command. This just lets you pull up a bar to quickly find and run applications.
-
-`sudo apt-get install synapse `
-
-###Slack for Linux
+### Slack for Linux
 
 If you're not already familiar with Slack, it is a messaging app that is widely used in many tech companies and it is heavily used by the Learn community for students to chat and stay in touch with each other. If you're going through Learn, you should be on Slack.
 
 `sudo apt-get install slack-desktop `
-
-### Parcellite
-
-This app stores your clipboard history and makes it really easy to paste anything from your history. Take a look at the settings and you can customize your keybindings for it.
-
-First, download [Parecellite](https://apps.ubuntu.com/cat/applications/precise/parcellite/) and then install xdotool with `sudo apt-get install xdotool`.
-
->Note: To set up one click paste from history, open up the Parecellite preferences. In the Behavior tab, select Auto Paste and Key and unselect Mouse. Then in the Hot Keys tab, just make sure you have something set for History Key Combination. Now when you hit those keys, you get your last X (X is number of items in history) copied items for easy pasting!
