@@ -30,7 +30,7 @@ Before we start installing all of our developer tools, we want to make sure that
 Now we can install some essential dev tools (postgres, node...) using curl:
 
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs`
- - `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+ - `curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
 
 ### The non-essentials:
@@ -67,7 +67,7 @@ The learn gem needs this netrc file to work. The `.netrc` file is a standard loc
 
  - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
  - `\curl -sSL https://get.rvm.io | bash`
- - `echo "[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*"`
+ - source "$HOME/.rvm/scripts/rvm" 
  - `rvm install 2.3.7`
  - `rvm use 2.3.7 --default`
 
@@ -87,14 +87,12 @@ To set up your gems and install some necessary ones, run the following commands:
  - `gem install sqlite3`
  - `gem install bundler`
  - `gem install rails`
- - `gem install nokogiri`
 
 ## Installing a Node Pacakge
 
-One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript. We're also going to do a global install for an npm testing package Protractor with the following command:
+One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript.
 
  - `sudo npm install -g n`
- - `sudo npm install -g protractor`
 
 ## Setting up your computer up with Github
 
