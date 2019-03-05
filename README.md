@@ -64,13 +64,13 @@ The learn gem needs this netrc file to work. The `.netrc` file is a standard loc
 
 ## Installing RVM
 
-[RVM](https://en.wikipedia.org/wiki/Ruby_Version_Manager) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.1.0 and another needs 2.3.0, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
+[RVM](https://en.wikipedia.org/wiki/Ruby_Version_Manager) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.3.1 and another needs 2.6.1, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
 
  - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
  - `\curl -sSL https://get.rvm.io | bash`
  - `echo "[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*"`
- - `rvm install 2.3.1`
- - `rvm use 2.3.1 --default`
+ - `rvm install 2.6.1`
+ - `rvm use 2.6.1 --default`
 
 You can easily install different Ruby verions with `rvm instal <version number>`, switch between versions with `rvm use <version number>` and check to see which you've already installed with `rvm list`. You can always check what version your current terminal window is with `ruby -v`.
 
@@ -81,7 +81,7 @@ If your familiar with any other program language, [Ruby gems](https://en.wikiped
 To set up your gems and install some necessary ones, run the following commands:
 
  - `echo "gem: --no-ri --no-rdoc" > $HOME/.gemrc`
- - `gem update --system 2.4.8`
+ - `gem update --system`
  - `gem install learn-co`
  - `gem install phantomjs`
  - `gem install pg`
