@@ -2,7 +2,7 @@
 
 ## Setting up your Ubuntu Developer Environment
 
-In this readme we are going to go over the steps for setting up your development environment in Ubuntu. Specifically, we wrote these instructions with Ubuntu 15.10 in mind using the MATE Desktop Environment 1.10.2.
+In this readme we are going to go over the steps for setting up your development environment in Ubuntu. Specifically, we wrote these instructions with Ubuntu 18.04 in mind using the MATE Desktop Environment 1.20.1.
 
 First off: **you need to be a user with `sudo` access to perform this setup**. You can check to see if you have sudo access by typing `sudo echo ok` in your terminal. If you get back `ok`, then you have the correct access.
 
@@ -30,9 +30,8 @@ Before we start installing all of our developer tools, we want to make sure that
 Now we can install some essential dev tools (postgres, node...) using curl:
 
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs`
- - `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+ - `curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
- - `sudo dpkg --add-architecture i386` This will install an architecture needed to install Team Viewer later.
 
 ### The non-essentials:
 
@@ -91,10 +90,9 @@ To set up your gems and install some necessary ones, run the following commands:
 
 ## Installing a Node Pacakge
 
-One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript. We're also going to do a global install for an npm testing package Protractor with the following command:
+One thing you'll see more of later in the course is npm, or [Node Package Manager](https://en.wikipedia.org/wiki/Npm_(software)). This is very similar to Ruby gems, but it's for JavaScript.
 
  - `sudo npm install -g n`
- - `sudo npm install -g protractor`
 
 ## Setting up your computer up with Github
 
@@ -130,47 +128,16 @@ These dotfiles do a variety of different things and I highly recomend you downlo
 
 The Google Chrome browser is the required browser for Learn. You can download and install it by going to www.google.com/chrome.
 
-### Team Viewer
+### Zoom Client
 
-You're going to want to download and install Team Viewer for Ubuntu [here](https://www.teamviewer.com/en/download/linux/). This is the tool we use at learn to screen share!
+You're going to want to download and install Zoom for Ubuntu [here](https://zoom.us/download?os=linux). This is the tool we use at learn to screen share! Download the .deb file, then right click and open with the GDebi Package Installer.
 
 ### Atom - Essential (or at least _some_ code editor)
 
 Atom is github's hackable code editor. It's got tons of great tools for writting code. You can get it by following [these instructions](https://github.com/atom/atom#debian-linux-ubuntu)
 
-### Synapse
-
-This is just a quick launcher. It has a blue S logo at the top of your screen. Right click, select preferences and you can set up a shortcut for the Activate command. This just lets you pull up a bar to quickly find and run applications.
-
-`sudo apt-get install synapse `
-
-### ScudCloud - Slack for Linux
+### Slack for Linux
 
 If you're not already familiar with Slack, it is a messaging app that is widely used in many tech companies and it is heavily used by the Learn community for students to chat and stay in touch with each other. If you're going through Learn, you should be on Slack.
 
-```
-sudo apt-add-repository -y ppa:rael-gc/scudcloud
-echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sudo apt-get update
-sudo apt-get install scudcloud
-```
-
-For more information on ScudCloud, you can check out their github: https://github.com/raelgc/scudcloud
-
-### Slack Beta
-
-You can try the official beta client, but keep in mind that it is still in the works. There are binary packages for Ubuntu and Fedora that can be found here: https://slack.com/downloads
-
-Download the 64-bit version for Ubuntu, `cd ~/Downloads` and run:
-
-```
-sudo dpkg -i slack-desktop-*.deb
-```
-
-### Parcellite
-
-This app stores your clipboard history and makes it really easy to paste anything from your history. Take a look at the settings and you can customize your keybindings for it.
-
-First, download [Parecellite](https://apps.ubuntu.com/cat/applications/precise/parcellite/) and then install xdotool with `sudo apt-get install xdotool`.
-
->Note: To set up one click paste from history, open up the Parecellite preferences. In the Behavior tab, select Auto Paste and Key and unselect Mouse. Then in the Hot Keys tab, just make sure you have something set for History Key Combination. Now when you hit those keys, you get your last X (X is number of items in history) copied items for easy pasting!
+`sudo apt-get install slack-desktop `
