@@ -110,7 +110,10 @@ It would be a real pain if you have to type your password in every time you want
 
 Now that you have most of your tools installed, you're going to want to configure your learn-co gem. As previously mentioned, this gem lets you run tests, open labs, submit them, and save them to finish later. You can configure the gem to your account by using the following command:
 
- - `learn whoami` and enter oauth token when asked (from https://learn.co/<github_username>)
+ - `learn whoami`
+ - Enter OAuth token when asked
+   - If you have connected your Github account to your Learn account, navigate to learn.co/your_github_username. The OAuth token is at the bottom of the page.
+    - If you have not connected your Github account: Go to [your profile](https://learn.co/account/profile) > Learn Settings > Public Profile. Click on the link under **Username**. The OAuth token is at the bottom of the page.
 
 ## Optional Dotfiles
 
