@@ -30,7 +30,7 @@ Before we start installing all of our developer tools, we want to make sure that
 Now we can install some essential dev tools (postgres, node...) using curl:
 
  - `sudo apt-get -y install curl postgresql libpq-dev default-jre build-essential phantomjs`
- - `curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
+ - `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
  - `sudo apt-get install nodejs`
  - `sudo dpkg --add-architecture i386` This will install an architecture needed to install Team Viewer later.
 
@@ -68,7 +68,7 @@ The learn gem needs this netrc file to work. The `.netrc` file is a standard loc
 
  - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
  - `\curl -sSL https://get.rvm.io | bash`
- - `echo "[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*"`
+ - `echo "[[ -s "$HOME/.rvm/scripts/rvm" ]]" && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*"`
  - `rvm install 2.6.1`
  - `rvm use 2.6.1 --default`
 
